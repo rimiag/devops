@@ -1,0 +1,10 @@
+node{
+
+ stage(SCM Checkout'){
+   git 'https://github.com/rimiag/devops'
+  }
+ stage('Compile and Package'){
+  sh 'mvn package'
+  }
+
+}
